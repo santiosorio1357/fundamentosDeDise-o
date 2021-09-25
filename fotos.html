@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fotos</title>
+        <meta charset="Utf-8"/>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/imagen2.jpg" alt="imagen2"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miPerfil.html">Mi Perfil</a></li>
+                    <li><a href="amigos.html">Mis Amigos</a></li>
+                    <li><a href="fotos.html">Mis fotos</a></li>
+                    <li><a href="buscar.html">Buscar Amigos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="perfil">
+            <img src="img/imagen1.jpg">
+            <h1>Diego pacheco</h1>
+            <form action="php/cambiarFoto.php" method="POST" enctype="multipart/form-data">
+            Cambiar Foto de Perfil: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required/>
+            <input type="submit" name="subir" value="subir"/>
+            </form>
+        </section>
+        <section>
+            <section id="recuadros">
+                <h2>Mis Fotos</h2>
+                <h3><form action="php/subirFoto.php" method="POST" enctype="multipart/form-data">
+                Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required/>
+                <input type="submit" name="subir" value="subir"/>
+                </form></h3>
+                <section class="recuadro">
+                    <img src="img/imagen1.jpg" height="200" width="280">
+                </section>
+                <section class="recuadro">
+                    <img src="img/imagen2.jpg" height="200" width="280">
+                </section>
+                <section class="recuadro">
+                    <img src="img/imagen3.jpg" height="200" width="280">
+                </section>
+                <section class="recuadro">
+                    <img src="img/imagen1.jpg" height="200" width="280">
+                </section>
+                <section class="recuadro">
+                    <img src="img/imagen2.jpg" height="200" width="280">
+                </section>
+                <section class="recuadro">
+                    <img src="img/imagen3.jpg" height="200" width="280">
+                </section>
+            </section>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2020, Ctrl Profe</p>
+        </footer>
+    </body>
+</html>
+            
